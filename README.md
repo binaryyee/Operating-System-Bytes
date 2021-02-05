@@ -31,11 +31,16 @@ If no Operating System, the user needs to write program to access every hardware
 7. Embedded - It can perform only a specific task which was set once it was made. Eg - AC, Washing Machine
 
 ### Process States
-Figure - New - Ready - (Wait/Block)- Running - Terminared
+Figure - New - Ready - (Wait/Block)(Suspend) - Running - Terminated --Its in iPAD photos now, make and paste it here).
 1. New - Process Created not runned only stored.
 2. Ready - Ready Queue, now its in Ram. Only few process can be in ready state, Long Term Schedular bring the processes in RAM (Multiprogramming) 
     * Few process dispatched to Running State (No. of dispatched depends on power of CPU). after completed - Terminated- then DeAllocate.
     * When RAM throws a priority task to CPU, then CPU will send the previous incomplete task to READY again (Priority), Time Quantum is one other factor which send the task to ready state, (Time Quantum - Specific amount of time allocated to perform the task, if its complete then terminates, if not sends back to ready and reschedule) It is done by STS (Short Term Schedular - has resonsibilty to schedule).
+3. (Wait/Block) - When the is in Running state and wants to perform IO Operations then CPU will send the running program to Wait/Block state, once the operation is completed, then It will go to Ready state and then the CPU will executed once it is in Running state again.
+     * When the WAIT/BLOCK queue gets filled, then the programs will be send to secondary memory (SUSPEND/WAIT), and it can do its required task there. It is done by MTS (Medium Term Schedular) when, Suspend Wait also gets filled, then extra task will go to SUSPEND READY ( which is Suspend for Ready Block - It works when the Ready Queue is filled, or a VVIP task is to be performed, the extra task are sent to SUSPEND READY), and the task which are in SUSPEND WAIT of WAIT/BLOCK are also sent to the SUSPEND READY once needed in worst cases, so that it can again go into Ready State then Running State.
+     
+     
+     
     
 
 
