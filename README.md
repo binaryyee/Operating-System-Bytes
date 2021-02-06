@@ -49,7 +49,33 @@ Figure - New - Ready - (Wait/Block)(Suspend) - Running - Terminated --Its in iPA
           O x 1
      
 
+ ### System Call 
+     * To access kernal mode, eg If we are write a C prog, and want to print on screen, then we need to access kernal mode.
+     (FIGURE)
      
+     1. File Related --> Open(), Read(), Write(), Close(), Create file etc.
+     2. Device Related --> Read, Write, Reposition, ioctl, fcnte
+     3. Information --> getPid, attributes, get System time and data
+     4. Process Control --> Load, Execute, abort, **Fork, nbit, Signal, Allocate etc
+     5. Communication --> Pipe(), Create/Delete connections, Shinget ()
+     
+ ### Fork System Call
+     * Used to create a child process
+     * It genreally returns 0(Child), +1(Parent), -1 (Child X) X 
+       eg -
+          main()
+          fork();
+          printf("hello");
+          }
+          
+          Output - Hello Hello. 
+          
+        *Explanation - 
+                P -- Fork Called then C1 and P, if it is called again then P Fork Called C1, P Fork Called Again - C2,C1,C3,P.
+        [Add Figure] 
+        How to find  : no of output - n^2 , and no of child = n^2 -1.
+        
+    
      
      
     
