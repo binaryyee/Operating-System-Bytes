@@ -39,6 +39,17 @@ Figure - New - Ready - (Wait/Block)(Suspend) - Running - Terminated --Its in iPA
 3. (Wait/Block) - When the is in Running state and wants to perform IO Operations then CPU will send the running program to Wait/Block state, once the operation is completed, then It will go to Ready state and then the CPU will executed once it is in Running state again.
      * When the WAIT/BLOCK queue gets filled, then the programs will be send to secondary memory (SUSPEND/WAIT), and it can do its required task there. It is done by MTS (Medium Term Schedular) when, Suspend Wait also gets filled, then extra task will go to SUSPEND READY ( which is Suspend for Ready Block - It works when the Ready Queue is filled, or a VVIP task is to be performed, the extra task are sent to SUSPEND READY), and the task which are in SUSPEND WAIT of WAIT/BLOCK are also sent to the SUSPEND READY once needed in worst cases, so that it can again go into Ready State then Running State.
      
+### Linux Commands
+     1. Only read condition to all - Chmod ugo = r note
+     2. Chmod ugo+rw note in octal notation = 666
+     3. lseek = its a system call (random acess of data, read write head) eg lseek(n,10,SEEK_CUR); --> lseek(n,5,SEEK_SET); so read write head in in 5.
+     
+          u r 4 ---- here ugo, means user group others, rwx means read write execute, 421 are numbers which are later used in octal representation.
+          g w 2
+          O x 1
+     
+
+     
      
      
     
