@@ -31,6 +31,9 @@ If no Operating System, the user needs to write program to access every hardware
 7. Embedded - It can perform only a specific task which was set once it was made. Eg - AC, Washing Machine
 
 ### Process States
+
+![alt text](https://www.gatevidyalay.com/wp-content/uploads/2018/10/Process-State-Diagram.png)
+
 Figure - New - Ready - (Wait/Block)(Suspend) - Running - Terminated --Its in iPAD photos now, make and paste it here).
 1. New - Process Created not runned only stored.
 2. Ready - Ready Queue, now its in Ram. Only few process can be in ready state, Long Term Schedular bring the processes in RAM (Multiprogramming) 
