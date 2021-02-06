@@ -95,6 +95,22 @@ Note : Child returns 0 and Parent returns +ve no;
 
 ![alt text](https://miro.medium.com/max/3616/1*J3LbfnG88ysmltH48VhU6w.png)
 
+Drivers : Works in Kernal Mode
+Processors : Switches between User & Kernal Mode
+
+Working : Suppose you write a program in notepad, You access the notepad usinga API call, then the program which you wrote requires access of Hardware, such as IO devices, So The process starts which executing, once it starts to execute then it it will use Get System Call we will used Read() sys call, to access the kernal mode and its MODE BIT = 1 will change to MODE BIT = 0, its called trap, once it completed its work in the kernal mode, it will again go back to user mode and perform the rest of the execution RETURN FROM KERNAL MODE and its MODE BIT will again shift to 1. 
+
+### Process v/s Threads
+
+| Process | Threads |
+| --- | ----------- |
+| System Calls  involved in Process | There is no system call |
+| OS Treats different process differently | All user level threads as singel task for OS |
+| Different process have different copies of Data, Files, Code | Threads share same copy of code and data |
+| Context switching is slow | Context switching is faster |
+| Blocking a process will not block entire process| Blocking thread will block entire process |
+| Independant | Interdependant |
+
 
     
      
