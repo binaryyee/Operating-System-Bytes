@@ -115,6 +115,24 @@ Working : Suppose you write a program in notepad, You access the notepad usinga 
 | Independant | Interdependant |
 
 
+### User Level Thread v/s Kernal Level Thread
+
+
+| User Level Thread | Kernal Level Threads |
+| --- | ----------- |
+| User level threads are managed by User Level Library | Kernal Level Threads are managed by OS System Calls |
+| User level threads are typically fast | Kernal level threads are slower than user level |
+| Context Switiching is Faster | Context Switching is Slower |
+| If one user level threads perform blocking operation then entire process gets blocked. | If one kernal level thread blocked, No affect on others |
+
+Note : Process/CT > KLT > ULT
+
+# CH2
+
+### Process Scheduling Algorithms
+
+
+
     
      
      
