@@ -75,6 +75,27 @@ Figure - New - Ready - (Wait/Block)(Suspend) - Running - Terminated --Its in iPA
         [Add Figure] 
         How to find  : no of output - n^2 , and no of child = n^2 -1.
         
+### Understanding Fork using Program
+
+     #include<stdio.h>
+     #include<unistd.h>
+     int main()
+     {
+          if(fork()&&forks()) {
+               fork();
+          printf("hello");
+          return 0;
+     }
+     
+Output : If the condition is true hello will be printed 4 times. [add figure for clarification]
+
+Note : Child returns 0 and Parent returns +ve no;
+
+### User Mode and Kernal Mode
+
+![alt text](https://miro.medium.com/max/3616/1*J3LbfnG88ysmltH48VhU6w.png)
+
+
     
      
      
