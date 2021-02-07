@@ -189,11 +189,26 @@ TAT = CT-AT
 WT = TAT-BT
 
 
-
- 
+### Algorithms Discuessed 
+   PDF of the numericals are attached .
+     1. FCFS : Criteria Arrival Time
+     2. SJF : Criteria Brust Time
+     3. SRTF : Criteria Brust Time, Preemptive
+     4. Round Robin : Criteria Time Quantum, Preemptive
+     5. Priority Scheduling : Criteria Priority, Preemptive Note, higher the number higher the priority.
+     6. 
      
+### Multi Level Queue Scheduling 
 
+![alt text](https://2.bp.blogspot.com/-YxSVj0AATSA/W6K13EPH7jI/AAAAAAAAAB8/UFbljrzj5EYOrKb08NXQpp1hBR_ngWQlwCLcBGAs/s1600/cpu-scheduling-algorithm.png)
 
+     * Every process has different algorithms.
+     * Here we are categorizing the process.
+     * Starvation may occurs due to mismanagement of priority.
+     * To solve starvation we use, feedback queue.
+     
+### Multilevel Feedback Queue
+     
 
     
      
