@@ -127,9 +127,30 @@ Working : Suppose you write a program in notepad, You access the notepad usinga 
 
 Note : Process/CT > KLT > ULT
 
+Hybrid Threads :
+![alt text](http://www.it.uu.se/education/course/homepage/os/vt18/images/module-4/scheduler-activations-1-2.png)
+
 # CH2
 
 ### Process Scheduling Algorithms
+
+Scheduling Algorithm : It is a way to pick a process and keep it in ready queue. then to send it to CPU.
+
+Pre-emptive : Stop in middle and execute in future. :: Ready Queue --> Running --> Ready Queue :: Uses time quantum (specific amount of time is alloted for a task, if it gets complete good, if not then rescheduled.) and another factor is Priority of the task or process.
+Pre-emptive : Complete Execution. :: Ready Queue --> Running --> Terminate ::
+
+### Algorithms in Scheduling.
+
+| Pre-Emptive | Non Pre-Emptive |
+| --- | ----------- |
+| SRTF (Short Remaining Time First)| FCFS (First Come First Serve) |
+| LRTF (Longest Remaning Time First | SJF (Shortest Job First) |
+| Rand Robin | LJF (Longest Job First) |
+| Priority Based | HRRN (Highest Response Ratio Next) |
+| Context Switiching is Faster | Multilevel Queue |
+
+
+
 
 
 
