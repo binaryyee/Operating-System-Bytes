@@ -151,7 +151,47 @@ Pre-emptive : Complete Execution. :: Ready Queue --> Running --> Terminate ::
 | | Priority |
 
 
+### CPU Scheduling 
 
+     1. Arival Time : The time at which process enter the Ready Queue or State
+     2. Brust Time : Time required by a process to get execute on CPU (Duration)
+     3. Completion Time : The time at which process complete its execution, (Not Duration)
+     4. Turn around Time : {Completion time - Arrival Time}
+     5. Waiting Time : {Turn around time - Brust Time}
+     6. Response Time : [(The time at which process get CPU First Time) - (Arrival Time)]
+     
+ Types of Time :
+ 1. CPU Bound : Time which is used while performing this process by CPU
+ 2. I/O Bound : Time when the process goes to perform IO 
+ 
+ ### FCFS : First Come First Serve Algorithm Example 
+ 
+ Criteria : Arrival Time
+ Mode : Non Preemptive
+ 
+| Process No | Arrival Time | Brust Time | Completion Time | TAT | WT | RT |
+| --- | ----------- |----------- |----------- |----------- |----------- |----------- |
+| P1 | 0 | 2 | 2 | 2 | | 0 |
+| P2 | 1 | 2 | 4 | 3 | | 1 |
+| P3 | 5 | 3 | 8 | 3 | | 0 |
+| P4 | 6 | 4 | 12 | 6 | | 2 |
+
+ADD GANT CHART : Remember it is solved using GANT Chart.
+XX -- IDLE TIME
+Look at the subscript values to know the running time.
+Once the process is in ready state, it is the next process to be performed.
+
+Gant Chart : P1   P2  XX   P3  P4
+Time       : 0 2   4   5    8   12
+
+Formulas :
+TAT = CT-AT
+WT = TAT-BT
+
+
+
+ 
+     
 
 
 
