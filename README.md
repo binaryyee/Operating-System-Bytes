@@ -147,7 +147,8 @@ Pre-emptive : Complete Execution. :: Ready Queue --> Running --> Terminate ::
 | LRTF (Longest Remaning Time First | SJF (Shortest Job First) |
 | Rand Robin | LJF (Longest Job First) |
 | Priority Based | HRRN (Highest Response Ratio Next) |
-| Context Switiching is Faster | Multilevel Queue |
+| | Multilevel Queue |
+| | Priority |
 
 
 
